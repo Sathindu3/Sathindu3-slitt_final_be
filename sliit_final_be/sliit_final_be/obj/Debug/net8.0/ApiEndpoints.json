@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "DetectionController",
+    "Method": "Detect",
+    "RelativePath": "api/Detection/detect",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

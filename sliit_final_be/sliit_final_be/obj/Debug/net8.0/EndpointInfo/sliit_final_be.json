@@ -1,0 +1,45 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "sliit_final_be",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Detection/detect": {
+      "post": {
+        "tags": [
+          "Detection"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "Image"
+                ],
+                "type": "object",
+                "properties": {
+                  "Image": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Image": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

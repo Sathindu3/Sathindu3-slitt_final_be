@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\sliit_final_be.props" />
+</Project>
